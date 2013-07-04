@@ -1,0 +1,7 @@
+
+      <li><%= @book.title %></li>
+      <li><%= image_tag(@book.image, :class => 'image_size') %></li>
+      <li><%= @book.genre %></li>
+      <li><%= @book.author_name %></li>
+<%= link_to 'delete', @book, :method => :delete %>
+<%= link_to 'edit', edit_book_path(@book) %>

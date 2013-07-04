@@ -1,0 +1,19 @@
+<%= form_for @book do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br>
+  <%= f.label :author_name %>
+  <%= f.text_field :author_name%>
+  <br>
+  <%= f.label :genre %>
+  <%= f.text_field :genre %>
+  <br>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+  <br>
+  <!-- this gets the author names and id's from the database. Map comes from functional programming.  f.select is the dropdown [author.name, author.id - it displays the author.name in the dropdown-->
+  <%= f.label :author_id %>
+  <%= f.select :author_id, Author.all.map {|author| [author.name, author.id]} %>
+  <br>
+  <%= f.submit %>
+<% end %>

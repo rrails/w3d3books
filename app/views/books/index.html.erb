@@ -1,0 +1,10 @@
+<div class = 'detail'>
+  <% @books.each do |book| %>
+    <ul class = 'item'>
+      <li><%= image_tag(book.image, :class => 'image_size') %></li>
+      <li><%= link_to(book.title, book, :class => 'author' )%></li>
+      <li><%= book.genre %></li>
+      <li><%= book.author_name %></li>
+    </ul>
+  <% end %>
+</div>

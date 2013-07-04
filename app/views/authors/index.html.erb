@@ -1,0 +1,10 @@
+<div class = 'detail'>
+  <% @authors.each do |author| %>
+    <ul class='item'>
+      <li><%= image_tag(author.image, :class => 'image_size') %></li>
+      <li><%= link_to(author.name, author, :class => 'author' )%></li>
+      <li><%= author.bio %></li>
+      <li><%= author.dob.strftime('%B %d %y') %></li>
+    </ul>
+  <% end %>
+</div>

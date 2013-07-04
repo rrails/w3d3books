@@ -1,0 +1,8 @@
+
+      <li><%= @author.name %></li>
+      <li><%= @author.bio %></li>
+      <li><%= @author.dob.strftime('%B %d %y') %></li>
+
+<!-- the line below gives you the list to the artist you want to delete -->
+<%= link_to 'delete', @author, :method => :delete %>
+<%= link_to 'edit', edit_author_path(@author) %>

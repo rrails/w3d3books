@@ -1,0 +1,19 @@
+.image_size {
+height: 20%;
+width: 20%;
+margin: auto;
+}
+
+li {
+  list-style: none;
+  text-align: center;
+}
+
+.detail{
+display: block;
+margin : auto;
+}
+
+.item{
+  margin-bottom: 80px;
+}
